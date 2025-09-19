@@ -20,7 +20,7 @@ author: David H
 ###############################################
 
 navbar-links:
-  About Me: "IDK"
+  About Me: "about-me"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
