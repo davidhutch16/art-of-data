@@ -1,18 +1,24 @@
 ---
 layout: post
-title: David
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: 1.4 Lab 1
+subtitle: Digimon Dataset
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
-author: Sharon Smith and Barry Simpson
+author: David Hutchinson
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+1.What is the average speed (Spd) of all Digimon?
+To answer this question I first created a nested dictionary, storing each Digimon's data using their numbers as the key. I then added all of the Digimon's speed and counted them so that I could find the average speed and print it. ![avg-spd](avg_spd.jpg)
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+2.Write a function that can count the number of Digimon with a specific attribute. For example, count_digimon("Type", "Vaccine") would return 70. 
+For this question I created a function to count the Digimon by a specific attribute and value. I had a bit of trouble with this one but with the help of copilot and using the itertools module I was able to complete it with this function:
+![question-2-function](question2.jpg)
+In this function you are able to search through an attribute like "Type" and count the number of digimon with a specific type.
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
-
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+3.The Digimon on your team are restricted by the total amount of Memory that they need. If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
+![question-3-function](Question3.jpg)
+This question gave me the most trouble however I found that using the itertools module was the easiest way of answering it. The outer loop (size in range(1, team_size + 1)) checks teams of size 1, 2, and 3. and the For loop with itertools.combinations(candidates, size) generates all possible unique teams of the given size. For each team, it sums up the memory and attack values. If the team meets the requirements, it returns a list of Digimon names in that team.
+![final-result](Result.jpg)
+In the end this Lab was a great learning experience.
