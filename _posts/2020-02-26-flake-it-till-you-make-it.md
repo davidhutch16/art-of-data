@@ -14,7 +14,7 @@ To answer this question I first created a nested dictionary, storing each Digimo
 
 2.Write a function that can count the number of Digimon with a specific attribute. For example, count_digimon("Type", "Vaccine") would return 70. 
 For this question I created a function to count the Digimon by a specific attribute and value. I had a bit of trouble with this one but with the help of copilot and using the itertools module I was able to complete it with this function:
-![question-2-function](question2.jpg)
+![question-2-function](https://davidhutch16.github.io/art-of-data/assets/img/question2.jpg)
 In this function you are able to search through an attribute like "Type" and count the number of digimon with a specific type.
 
 3.The Digimon on your team are restricted by the total amount of Memory that they need. If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
